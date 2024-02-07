@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <title>Master</title>
+</head>
+
+    <script>
+        function a1()
+        {
+            a=document.form1.text1.value
+            b=document.form1.text2.value
+            c=document.form1.text3.value
+            d=eval(a)+eval(b)+eval(c)
+
+            alert("Total marks is"+d)
+
+            e=d/300*100
+            
+            alert("Percentage is"+e)
+
+            if(e>=75)
+            {
+                alert("Distinction")
+            }
+            else if(e>=65 && e<75)
+            {
+                alert("A Grade")
+
+            }
+            else if(e>=55 && e<65)
+            {
+                alert("B Grade")
+
+            }
+            else if(e>=45 && e<55)
+            {
+                alert("C Grade")
+
+            }
+            else
+            {
+                alert("D Grade")
+
+            }
+
+        }
+    </script>
+
+        <body>
+
+            <form name="form1">
+
+                Enter The Marks of Hindi:<input type="text" name="text1" value="">
+                <br>
+                Enter The Marks of Marathi:<input type="text" name="text2" value="">
+                <br>
+                Enter The Marks of Gujarati:<input type="text" name="text3" value="">
+                <br>
+                <input type="button" value="Click" onclick="a1()">
+
+            </form>
+        </body>
+</html>
